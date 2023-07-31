@@ -26,12 +26,5 @@
 ;;検索中に検索文字を削除
 (define-key isearch-mode-map (kbd "C-h") 'isearch-del-char)
 
-;; 英語フォントを指定する
-;(set-face-attribute 'default nil :family "Consolas" :height 120)
-
-;; 日本語フォントを指定する
-;(set-fontset-font nil 'japanese-jisx0208
-;                  (font-spec :family "PlemolJP Console NFJ"))
-
 ;; view-help-file が無茶苦茶時間がかかるので間違ってキックしないように、、
-;(global-set-key (kbd "C-h h") nil)
+(global-set-key (kbd "C-h h") nil)
