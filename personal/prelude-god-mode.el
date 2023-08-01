@@ -20,3 +20,6 @@
 (define-key god-local-mode-map (kbd "i") #'god-local-mode)
 (define-key god-local-mode-map (kbd ".") #'repeat)
 (add-hook 'post-command-hook #'my/god-mode-hook)
+
+(setq-default mode-line-format
+              (add-to-list 'mode-line-format '(:eval (if god-local-mode "🚀" "⬛"))))
