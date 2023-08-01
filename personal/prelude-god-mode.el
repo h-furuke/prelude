@@ -17,6 +17,7 @@
   (lin-mode (if god-local-mode 1 0)))
 
 (global-set-key (kbd "M-ESC") #'enable-god-mode)
+(define-key god-local-mode-map (kbd "h") (kbd "<DEL>"))
 (define-key god-local-mode-map (kbd "i") #'god-local-mode)
 (define-key god-local-mode-map (kbd ".") #'repeat)
 (add-hook 'post-command-hook #'my/god-mode-hook)

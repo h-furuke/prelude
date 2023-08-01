@@ -28,3 +28,7 @@
 
 ;; view-help-file が無茶苦茶時間がかかるので間違ってキックしないように、、
 (global-set-key (kbd "C-h h") nil)
+
+;; cua-mode の設定
+(cua-mode t)
+(setq cua-enable-cua-keys nil)          ;CUA キーバインドを無効にする
